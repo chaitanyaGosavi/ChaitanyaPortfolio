@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+.Hero-header span {
+    transition: all ease-in-out;
+    animation-duration: 200ms;
+}
+
+.Hero-header span:hover {
+    color: rgb(35, 120, 190);
+    background-color: rgb(244, 244, 244);
+    border-radius: 4px;
+    transition: all ease-in-out;
+    animation-duration: 200ms;
+}
+
+
+.stage {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+
+.ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #373737, #f8fcff 80%, #ffffff 100%);
+}
+
+.skillSphere {
+    display: inline-block;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #eaeaea, #e3e3e3 80%, #fffcfc 100%);
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+.card {
+    background-color: #78787848;
+    border: 1px solid #276e5e7c;
+}
+
+.timelineCard {
+    background: radial-gradient(circle at 50% 120%, #c5c5c5, #797979 80%, #a0dfff 100%);
+
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(5%);
+        transform: rotateX(20deg);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+}
+
+.skillSphere:nth-child(1),
+.skillSphere:nth-child(6) {
+    animation-delay: 400ms;
+}
+
+.skillSphere:nth-child(2),
+.skillSphere:nth-child(9) {
+    animation-delay: 600ms;
+}
+
+.skillSphere:nth-child(3),
+.skillSphere:nth-child(7) {
+    animation-delay: 800ms;
+}
+
+.skillSphere:nth-child(4),
+.skillSphere:nth-child(5) {
+    animation-delay: 300ms;
+}
+
+.ball:before {
+    content: "";
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    bottom: 2.5%;
+    left: 5%;
+    opacity: 0.6;
+    height: 100%;
+    width: 90%;
+    filter: blur(5px);
+    z-index: 2;
+}
+
+.ball:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-30px) translateY(-30px) skewX(-20deg);
+    filter: blur(10px);
+}
+
+.iris {
+    width: 40%;
+    height: 40%;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #dfdfdf 0%, #6fbfff 30%, #bdbdbd 100%);
+    transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+    position: absolute;
+    animation: move-eye-skew 5s ease-out infinite;
+}
+
+.iris:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 50%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
+}
+
+.iris:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 50%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+@keyframes move-eye-skew {
+    0% {
+        transform: none;
+    }
+
+    20% {
+        transform: translateX(-20px) translateY(10px) skewX(15deg) skewY(-10deg) scale(0.95);
+    }
+
+    25%,
+    44% {
+        transform: none;
+    }
+
+    50%,
+    60% {
+        transform: translateX(20px) translateY(-10px) skewX(5deg) skewY(2deg) scaleX(0.95);
+    }
+
+    66%,
+    100% {
+        transform: none;
+    }
+}
+

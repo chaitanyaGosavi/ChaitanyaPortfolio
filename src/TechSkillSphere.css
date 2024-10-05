@@ -1,0 +1,7 @@
+
+  .circle {
+    /* background-image: url('./assets/reactBG.png'); Replace with your image URL */
+    background-size: contain;
+    border-radius: 50%;
+    display: inline-block;
+  }
