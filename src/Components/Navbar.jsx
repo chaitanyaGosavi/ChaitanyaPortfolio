@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className='w-screen bg-[#78787875] fixed z-10'>
             <div className="w-screen lg:w-[80vw] lg:mx-auto flex items-center justify-between p-5">
                 <div className='flex-1 w-full'>
-                    <a href="#"><img className='w-10 h-10 md:w-16 md:h-16' src="\src\assets\logoBG.png" alt="logo" /> </a>
+                    <a href="#"><img className='w-10 h-10 md:w-16 md:h-16' src="src\assets\logoBG.png" alt="logo" /> </a>
                 </div>
                 <div className="flex-1">
                     <ul className="w-full flex text-sm md:text-lg lg:text-2xl items-center justify-center xl:space-x-5 space-x-1 uppercase">
