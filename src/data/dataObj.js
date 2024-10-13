@@ -3,31 +3,31 @@ var response = {
         {
             headerText: "Crypto Platform",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
-            imgPath: "src/assets/CryptoBG.jpg",
+            imgPath: "/assets/CryptoBG.jpg",
             linkToProject:"https://crypto-tracking-platform.netlify.app/",
             id: 1
         }, {
             headerText: "Tourism Website",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
-            imgPath: "src/assets/TravelBG.jpg",
+            imgPath: "/assets/TravelBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/mera-bharat-website/",
             id: 2
         }, {
             headerText: "Expense Tracker",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
-            imgPath: "src/assets/ExpenseBG.jpg",
+            imgPath: "/assets/ExpenseBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/expensetracker/",
             id: 3
         }, {
             headerText: "Hotel Menu",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
-            imgPath: "src/assets/HotelMenuBG.jpg",
+            imgPath: "/assets/HotelMenuBG.jpg",
             linkToProject:"https://restraunt-menu.netlify.app/",
             id: 4
         }, {
             headerText: "Resume Builder",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
-            imgPath: "src/assets/ResumeBuilderBG.jpg",
+            imgPath: "/assets/ResumeBuilderBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/resume4U/",
             id: 5
         },
@@ -37,34 +37,34 @@ var response = {
             imgPath: "/assets/reactBG.png",
             id: 1
         }, {
-            imgPath: "src/assets/javascriptBG.png",
+            imgPath: "/assets/javascriptBG.png",
             id: 2
         }, {
-            imgPath: "src/assets/tailwindcssBG.png",
+            imgPath: "/assets/tailwindcssBG.png",
             id: 3
         }, {
-            imgPath: "src/assets/htmlBG.png",
+            imgPath: "/assets/htmlBG.png",
             id: 4
         }, {
-            imgPath: "src/assets/cssBG.png",
+            imgPath: "/assets/cssBG.png",
             id: 5
         }, {
-            imgPath: "src/assets/pythonBG.png",
+            imgPath: "/assets/pythonBG.png",
             id: 6
         }, {
-            imgPath: "src/assets/bootstrapBG.png",
+            imgPath: "/assets/bootstrapBG.png",
             id: 7
         }, {
-            imgPath: "src/assets/sqlBG.png",
+            imgPath: "/assets/sqlBG.png",
             id: 8
         }, {
-            imgPath: "src/assets/linuxBG.png",
+            imgPath: "/assets/linuxBG.png",
             id: 9
         }, {
-            imgPath: "src/assets/gitBG.png",
+            imgPath: "/assets/gitBG.png",
             id: 10
         }, {
-            imgPath: "src/assets/svnBG.png",
+            imgPath: "/assets/svnBG.png",
             id: 11
         },
     ],
@@ -93,22 +93,22 @@ var response = {
     contactDetails: [
         {
             data: '9082994034',
-            imgPath: 'src/assets/PhoneIcon.png',
+            imgPath: '/assets/PhoneIcon.png',
             isLink: false,
             id:1
         }, {
             data: '9082994034',
-            imgPath: 'src/assets/WhatsappIcon.png',
+            imgPath: '/assets/WhatsappIcon.png',
             isLink: false,
             id:2
         }, {
             data: 'https://github.com/chaitanyaGosavi',
-            imgPath: 'src/assets/GithubIcon.png',
+            imgPath: '/assets/GithubIcon.png',
             isLink: true,
             id:3
         }, {
             data: 'https://www.linkedin.com/in/chaitanya-gosavi-5b66b21b7/',
-            imgPath: 'src/assets/LinkedinIcon.png',
+            imgPath: '/assets/LinkedinIcon.png',
             isLink: true,
             id:4
         }
