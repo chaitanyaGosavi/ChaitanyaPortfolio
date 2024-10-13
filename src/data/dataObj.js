@@ -34,7 +34,7 @@ var response = {
     ],
     skillsResponse: [
         {
-            imgPath: "src/assets/reactBG.png",
+            imgPath: "/src/assets/reactBG.png",
             id: 1
         }, {
             imgPath: "src/assets/javascriptBG.png",
