@@ -39,7 +39,7 @@ const ContactFooter = () => {
                             className="mt-4 text-center w-15 h-auto rounded-md text-4xl font-semibold text-gray-100 shadow-sm bg-gray-400 bg-opacity-0 hover:bg-opacity-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
                             <img
-                                src='src\assets\downloadIcon.png'
+                                src='\assets\downloadIcon.png'
                                 alt="Resume Icon"
                                 className="w-10 h-10"
                             />
