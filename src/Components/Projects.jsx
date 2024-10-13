@@ -1,5 +1,5 @@
 import React from 'react'
-import response from '../data/dataObj'
+import response from './data/dataObj'
 
 
 const Projects = () => {
