@@ -5,7 +5,7 @@ const ExperienceSection = () => {
   const timelineItems = response.timelineItems;
   const tobecontinued = response.toBeContinued;
   return (
-    <div className='w-full mt-[20vh]'>
+    <div className='w-full mt-[20vh]'  id='experienceSection'>
       <div className='w-[90vw] h-auto mx-auto px-10 py-5 rounded-3xl flex-col gap-y-10 justify-start items-center card'>
         <p className='text-lg text-gray-300 text-opacity-80 uppercase'>What I've done so far</p>
         <h2 className='text-5xl my-2 flex-1 font-semibold text-gray-200 Hero-header'><span>W</span><span>o</span><span>r</span><span>k</span> <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span></h2>

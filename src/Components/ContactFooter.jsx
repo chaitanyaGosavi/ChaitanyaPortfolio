@@ -13,9 +13,9 @@ const ContactFooter = () => {
       };
 
     return (
-        <div className='w-full h-auto mt-[20vh] card'>
+        <div className='w-full h-auto mt-[20vh] card'  id='contactSection'>
             <div className='w-[90vw] h-full mx-auto px-10 py-5 rounded-3xl flex-col gap-y-10 justify-start items-center'>
-                <p className='text-lg text-gray-300 text-opacity-80 uppercase'>Reach Out To Me :)</p>
+                <p className='text-lg text-gray-300 text-opacity-80 uppercase'>Reach Out To Me :{")"}</p>
                 <h2 className='text-5xl mt-2 mb-20 flex-1 font-semibold text-gray-200 Hero-header'><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span> <span>D</span><span>e</span><span>t</span><span>a</span><span>i</span><span>l</span><span>s</span></h2>
                 <div className='flex w-full h-auto justify-between items-start p-4'>
                     <div className='flex-1 h-auto mx-auto flex flex-col gap-y-8 flex-wrap'>

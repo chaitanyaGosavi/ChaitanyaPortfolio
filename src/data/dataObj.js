@@ -4,26 +4,31 @@ var response = {
             headerText: "Crypto Platform",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
             imgPath: "src/assets/CryptoBG.jpg",
+            linkToProject:"https://crypto-tracking-platform.netlify.app/",
             id: 1
         }, {
             headerText: "Tourism Website",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
             imgPath: "src/assets/TravelBG.jpg",
+            linkToProject:"https://chaitanyagosavi.github.io/mera-bharat-website/",
             id: 2
         }, {
             headerText: "Expense Tracker",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
             imgPath: "src/assets/ExpenseBG.jpg",
+            linkToProject:"https://chaitanyagosavi.github.io/expensetracker/",
             id: 3
         }, {
             headerText: "Hotel Menu",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
             imgPath: "src/assets/HotelMenuBG.jpg",
+            linkToProject:"https://restraunt-menu.netlify.app/",
             id: 4
         }, {
             headerText: "Resume Builder",
             infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
             imgPath: "src/assets/ResumeBuilderBG.jpg",
+            linkToProject:"https://chaitanyagosavi.github.io/resume4U/",
             id: 5
         },
     ],

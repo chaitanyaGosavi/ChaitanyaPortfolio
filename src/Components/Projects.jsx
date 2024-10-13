@@ -18,7 +18,7 @@ const Projects = () => {
                                 <p className="mt-2 text-sm text-gray-300">
                                     {ele.infoText}
                                 </p>
-                                <a href="#"
+                                <a href= {ele.linkToProject}
                                  className="mt-4 block text-center w-full rounded-md bg-none bg-transparent px-2 py-1.5 text-sm font-semibold text-gray-100 shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                                 >View Demo</a>
                             </div>

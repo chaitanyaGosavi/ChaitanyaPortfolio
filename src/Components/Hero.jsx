@@ -36,7 +36,7 @@ const Hero = () => {
                     </section>
                 </div>
                 <h2 className='text-6xl lg:text-8xl my-4 font-semibold text-gray-200 Hero-header'>I'm <span>C</span><span>h</span><span>a</span><span>i</span><span>t</span><span>a</span><span>n</span><span>y</span><span><span>a</span></span></h2>
-                <p className='text-xl xl:text-3xl text-gray-300 text-opacity-80'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <p className='text-xl xl:text-3xl text-gray-300 text-opacity-80'>Bridging the gap between design and functionality with modern web technologies.</p>
             </div>
         </div>
     )

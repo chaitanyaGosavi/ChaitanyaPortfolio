@@ -27,7 +27,7 @@ const Navbar = () => {
                         </li>
                         <li className='flex-1'>
                             <a
-                                href="#"
+                                href="#experienceSection"
                                 className="w-full px-4 py-1 rounded-lg font-semibold text-stone-100 hover:text-sky-600 hover:bg-stone-100 bg-opacity-25 ease-in-out duration-300"
                             >
                                 Experience
@@ -35,7 +35,7 @@ const Navbar = () => {
                         </li>
                         <li className='flex-1'>
                             <a
-                                href="#"
+                                href="#contactSection"
                                 className="w-full px-4 py-1 rounded-lg font-semibold text-stone-100 hover:text-sky-600 hover:bg-stone-100 bg-opacity-25 ease-in-out duration-300"
                             >
                                 Contact
