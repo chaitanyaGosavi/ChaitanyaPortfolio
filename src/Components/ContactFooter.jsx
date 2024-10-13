@@ -32,7 +32,7 @@ const ContactFooter = () => {
                         }
                     </div>
                     <div className="flex-1 flex rounded-lg bg-none justify-start items-center h-full gap-x-2">
-                        <img className='h-20 w-20' src='src\assets\ResumeIcon.png' alt="" />
+                        <img className='h-20 w-20' src='\assets\ResumeIcon.png' alt="" />
                         <h3 className="font-bold text-3xl text-gray-50">{resumeCard.title}</h3>
                         <button href="#"
                             onClick={downloadPDF}
