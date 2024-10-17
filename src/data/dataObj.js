@@ -2,31 +2,31 @@ var response = {
     ProjectsResponse: [
         {
             headerText: "Crypto Platform",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "A simple platform that allows users to track real-time cryptocurrency rates. It displays live prices of popular digital currencies, helping users stay updated on market movements without any complex portfolio management features.",
             imgPath: "/assets/CryptoBG.jpg",
             linkToProject:"https://crypto-tracking-platform.netlify.app/",
             id: 1
         }, {
             headerText: "Tourism Website",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "A website designed to let users explore and book from a selection of travel packages. It provides brief descriptions of available destinations and package details, allowing travelers to easily make bookings online.",
             imgPath: "/assets/TravelBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/mera-bharat-website/",
             id: 2
         }, {
             headerText: "Expense Tracker",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "An easy-to-use tool for recording daily expenses and income. Users can log their transactions and keep a basic record of their financial activities, helping them maintain a simple personal budget.",
             imgPath: "/assets/ExpenseBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/expensetracker/",
             id: 3
         }, {
             headerText: "Hotel Menu",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "An online menu for a restaurant that displays available food and drink options. The digital menu is easy to navigate, showcasing dishes with descriptions and prices, offering a straightforward way for customers to view the restaurant's offerings.",
             imgPath: "/assets/HotelMenuBG.jpg",
             linkToProject:"https://restraunt-menu.netlify.app/",
             id: 4
         }, {
             headerText: "Resume Builder",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "A basic web app that generates a resume by collecting user-provided details such as personal information, education, and work experience. Once the information is submitted, the app formats it into a clean resume ready for download.",
             imgPath: "/assets/ResumeBuilderBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/resume4U/",
             id: 5
