@@ -13,7 +13,7 @@ const TechSkillSphere = () => {
                         key={ele.id}
                         >
                             <div
-                                className="circle m-4 w-16 h-16"
+                                className="circle m-4 md:w-16 md:h-16 w-8 h-8"
                                 style={{ backgroundImage: `url(${ele.imgPath})` }}
                             ></div>
                         </div>

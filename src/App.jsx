@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='min-w-screen max-w-full min-h-screen bg-cover bg-center overflow-hidden' style={{ backgroundImage: `url('/assets/ProjectsBG.jpg')` }}>
+    <div className='min-w-screen max-w-full min-h-screen bg-cover bg-center overflow-hidden'>
       <Navbar />
       <Hero />
       <TechSkills />

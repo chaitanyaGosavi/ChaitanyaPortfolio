@@ -8,18 +8,47 @@
 
 
 .Hero-header span {
+    padding: 1px;
+    transition: all ease-in-out;
+    animation-duration: 200ms;
+}
+
+.project-header span {
+    padding: 2px;
     transition: all ease-in-out;
     animation-duration: 200ms;
 }
 
 .Hero-header span:hover {
-    color: rgb(35, 120, 190);
-    background-color: rgb(244, 244, 244);
-    border-radius: 4px;
+    color: #f4f4f6;
+    background-color: #1f2937;
+    border-radius: 6px;
     transition: all ease-in-out;
     animation-duration: 200ms;
 }
 
+.project-header span:hover {
+    color: #1f2937;
+    background-color: #f4f4f6;
+    border-radius: 6px;
+    transition: all ease-in-out;
+    animation-duration: 200ms;
+}
+
+#HeroSection{
+    background: linear-gradient(315deg, #151a22 100ch, #f4f4f6 10ch);
+}
+
+#projectSection{
+    background: linear-gradient(120deg, #151a22 100ch, #f4f4f6 10ch);
+}
+
+.projectCard:hover{
+    scale: 1.02;
+    transition: all ease-in-out;
+    animation-duration: 500ms;
+    cursor: pointer;
+}
 
 .stage {
     width: 100px;
@@ -29,6 +58,63 @@
     perspective: 1200px;
     perspective-origin: 50% 50%;
 }
+
+@media only screen and (max-width: 1440px) {
+    #HeroSection{
+        background: linear-gradient(315deg, #151a22 50ch, #f4f4f6 10ch);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #HeroSection{
+        background: linear-gradient(315deg, #151a22 20ch, #f4f4f6 10ch);
+    }
+    
+    #projectSection{
+        background: linear-gradient(270deg, #151a22 100ch, #f4f4f6 10ch);
+    }
+
+    .stage {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        margin: 20px;
+        perspective: 1200px;
+        perspective-origin: 50% 50%;
+    }
+
+    .iris {
+        background: radial-gradient(circle at 50% 50%, #dfdfdf 0%, #6fbfff 30%, #bdbdbd 100%);
+        transform: translateX(28px) translateY(-20px) skewX(15deg) skewY(2deg);
+        position: absolute;
+        animation: move-eye-skew 5s ease-out infinite;
+    }
+
+    @keyframes move-eye-skew {
+        0% {
+            transform: none;
+        }
+    
+        20% {
+            transform: translateX(-10px) translateY(6px) skewX(15deg) skewY(-10deg) scale(0.95);
+        }
+    
+        25%,
+        44% {
+            transform: none;
+        }
+    
+        50%,
+        60% {
+            transform: translateX(10px) translateY(-6px) skewX(5deg) skewY(2deg) scaleX(0.95);
+        }
+    
+        66%,
+        100% {
+            transform: none;
+        }
+    }
+  }
 
 .ball {
     display: inline-block;

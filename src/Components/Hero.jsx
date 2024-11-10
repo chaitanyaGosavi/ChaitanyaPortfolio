@@ -24,10 +24,10 @@ const Hero = () => {
         setYPoint(deltaY);
     };
     return (
-        <div className='w-screen h-[100vh] HeroSection'>
-            <div className='w-[80vw] h-full mx-auto flex-1 text-justify flex flex-col justify-center text-gray-400'>
-                <div className='flex w-[50%] justify-start items-center'>
-                    <h2 className='text-6xl lg:text-8xl font-semibold text-gray-200'>Hi</h2>
+        <div className='w-screen h-[100vh] HeroSection' id='HeroSection'>
+            <div className='w-[80vw] h-full mx-auto flex-1 text-justify flex flex-col justify-center'>
+                <div className='flex w-[70%] justify-start items-center'>
+                    <h2 className='text-5xl md:text-6xl lg:text-8xl font-semibold text-slate-500'>Hi</h2>
                     <section className="stage">
                         <figure onMouseMove={handleMouseMove} style={{ transform: `rotate(${rotation}deg)` }} className="ball" >
                             <span className="shadow"></span>
@@ -35,8 +35,8 @@ const Hero = () => {
                         </figure>
                     </section>
                 </div>
-                <h2 className='text-6xl lg:text-8xl my-4 font-semibold text-gray-200 Hero-header'>I'm <span>C</span><span>h</span><span>a</span><span>i</span><span>t</span><span>a</span><span>n</span><span>y</span><span><span>a</span></span></h2>
-                <p className='text-xl xl:text-3xl text-gray-300 text-opacity-80'>Bridging the gap between design and functionality with modern web technologies.</p>
+                <h2 className='text-5xl md:text-6xl lg:text-8xl my-4 font-semibold text-gray-800 Hero-header'>I'm <span>C</span><span>h</span><span>a</span><span>i</span><span>t</span><span>a</span><span>n</span><span>y</span><span><span>a</span></span></h2>
+                <p className='text-lg md:text-xl xl:text-3xl text-gray-400'>Bridging the gap between design and functionality with modern web technologies.</p>
             </div>
         </div>
     )

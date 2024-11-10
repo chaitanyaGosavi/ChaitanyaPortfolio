@@ -2,31 +2,31 @@ var response = {
     ProjectsResponse: [
         {
             headerText: "Crypto Platform",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "Watch trending Crypto Currencies by market cap and also a detailed historical chart of each currency",
             imgPath: "/assets/CryptoBG.jpg",
             linkToProject:"https://crypto-tracking-platform.netlify.app/",
             id: 1
         }, {
             headerText: "Tourism Website",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "Explore all the gems of Incredible India with Mera Bharat",
             imgPath: "/assets/TravelBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/mera-bharat-website/",
             id: 2
         }, {
             headerText: "Expense Tracker",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "A simple Income-Expense tracker for some of those quick budget tasks",
             imgPath: "/assets/ExpenseBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/expensetracker/",
             id: 3
         }, {
             headerText: "Hotel Menu",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "Choose from a wide range of delicacies grouped according to meal type",
             imgPath: "/assets/HotelMenuBG.jpg",
             linkToProject:"https://restraunt-menu.netlify.app/",
             id: 4
         }, {
             headerText: "Resume Builder",
-            infoText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim quae repellendus voluptas veniam ullam adipisci, aperiam eaque, tempora ea iusto placeat voluptatem. Adipisci cupiditate blanditiis fugiat expedita, neque velit?",
+            infoText: "Simplify creating resume with your personal and professional details",
             imgPath: "/assets/ResumeBuilderBG.jpg",
             linkToProject:"https://chaitanyagosavi.github.io/resume4U/",
             id: 5
