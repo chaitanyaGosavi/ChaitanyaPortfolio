@@ -8,7 +8,7 @@ const ContactFooter = () => {
     const downloadPDF = () => {
         const link = document.createElement('a');
         link.href = '/assets/Chaitanya_Resume.pdf'; // Replace with your actual PDF file path
-        link.download = 'Chaitanya_Resume.pdf'; // The name of the file after download
+        link.download = `Chaitanya's Resume.pdf`; // The name of the file after download
         link.click();
       };
 
