@@ -70,17 +70,16 @@ var response = {
     ],
     timelineItems: [
         {
-            title: 'Graduate Engineering Trainee',
-            company: 'Vistaar Technologies',
-            date: 'Jun 2023 - Jun 2024',
-            position: 'left',
-        },
-        {
             title: 'Software Engineer (UI)',
             company: 'Vistaar Technologies',
             date: 'Jun 2024 - Present',
             position: 'right',
-        },
+        }, {
+            title: 'Graduate Engineering Trainee',
+            company: 'Vistaar Technologies',
+            date: 'Jun 2023 - Jun 2024',
+            position: 'left',
+        }
        
     ],
     resumeCard: {
