@@ -1,35 +1,41 @@
 var response = {
     ProjectsResponse: [
-        {
+         {
+            headerText: "Redux Pizzeria",
+            infoText: "Navigate the globe and select the cities and countries you want to or already visited",
+            imgPath: "/assets/Pizzeria.jpg",
+            linkToProject:"https://reduxpizzeria.netlify.app/",
+            id: 10
+        }, {
             headerText: "Crypto Platform",
-            infoText: "Watch trending Crypto Currencies by market cap and also a detailed historical chart of each currency",
+            infoText: "Watch trending Crypto Currencies and a detailed historical chart of each currency",
             imgPath: "/assets/CryptoBG.jpg",
             linkToProject:"https://crypto-tracking-platform.netlify.app/",
             id: 1
         }, {
-            headerText: "Tourism Website",
-            infoText: "Explore all the gems of Incredible India with Mera Bharat",
-            imgPath: "/assets/TravelBG.jpg",
-            linkToProject:"https://chaitanyagosavi.github.io/mera-bharat-website/",
-            id: 2
+            headerText: "Chai-Code-Pen",
+            infoText: "Try out your HTML, CSS code on Chai-code-pen",
+            imgPath: "/assets/CodePen.jpg",
+            linkToProject:"https://chai-code-pen.netlify.app/",
+            id: 6
         }, {
-            headerText: "Expense Tracker",
-            infoText: "A simple Income-Expense tracker for some of those quick budget tasks",
-            imgPath: "/assets/ExpenseBG.jpg",
-            linkToProject:"https://chaitanyagosavi.github.io/expensetracker/",
-            id: 3
+            headerText: "Movie Nest",
+            infoText: "Movie listing site with watched list and user ratings",
+            imgPath: "/assets/Movies.jpg",
+            linkToProject:"https://movienestproject.netlify.app/",
+            id: 7
         }, {
-            headerText: "Hotel Menu",
-            infoText: "Choose from a wide range of delicacies grouped according to meal type",
-            imgPath: "/assets/HotelMenuBG.jpg",
-            linkToProject:"https://restraunt-menu.netlify.app/",
-            id: 4
+            headerText: "React Quiz",
+            infoText: "Practice your React Skills and revise fundamentals",
+            imgPath: "/assets/Quiz.jpg",
+            linkToProject:"https://practicereactquiz.netlify.app/",
+            id: 8
         }, {
-            headerText: "Resume Builder",
-            infoText: "Simplify creating resume with your personal and professional details",
-            imgPath: "/assets/ResumeBuilderBG.jpg",
-            linkToProject:"https://chaitanyagosavi.github.io/resume4U/",
-            id: 5
+            headerText: "Globe Navigator",
+            infoText: "Navigate the globe and select the cities and countries you want to or already visited",
+            imgPath: "/assets/Navigate.jpg",
+            linkToProject:"https://globenavigator.netlify.app/",
+            id: 9
         },
     ],
     skillsResponse: [

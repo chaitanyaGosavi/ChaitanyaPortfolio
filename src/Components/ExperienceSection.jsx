@@ -41,7 +41,7 @@ const ExperienceSection = () => {
           <div className="flex items-start">
             <span className="w-6 h-6 bg-blue-500 rounded-full border-2 border-white shadow-md mt-2 relative z-10"></span>
             <div className="w-6"></div>
-            <div className="shadow-lg shadow-gray-500 rounded-xl p-6 bg-gray-600 w-full md:w-2/3">
+            <div className="shadow-lg shadow-gray-500 rounded-xl p-6 bg-[#6b7583] w-full md:w-2/3">
               <h3 className="font-bold text-lg md:text-2xl text-gray-50">
                 {tobecontinued.title}
               </h3>
@@ -57,11 +57,11 @@ const ExperienceSection = () => {
               <div className="w-6"></div>
 
               {/* Card */}
-              <div className="shadow-lg shadow-gray-400 rounded-xl p-6 bg-gray-800 w-full md:w-2/3">
+              <div className="shadow-lg shadow-gray-400 rounded-xl p-6 bg-[#566985] w-full md:w-2/3">
                 <h3 className="font-bold text-lg md:text-2xl text-gray-50">
                   {item.title}
                 </h3>
-                <p className="text-gray-400 text-sm md:text-lg">{item.company}</p>
+                <p className="text-gray-300 text-sm md:text-lg">{item.company}</p>
                 <p className="text-gray-200 mt-1">{item.date}</p>
               </div>
             </div>

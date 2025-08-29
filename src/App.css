@@ -36,11 +36,15 @@
 }
 
 #HeroSection{
-    background: linear-gradient(315deg, #151a22 100ch, #f4f4f6 10ch);
+    background: linear-gradient(280deg, #6985ac 20ch, #f4f4f6 170ch);
 }
 
 #projectSection{
-    background: linear-gradient(120deg, #151a22 100ch, #f4f4f6 10ch);
+    background: linear-gradient(100deg, #4d698f 20ch, #f4f4f6 140ch);
+}
+
+#contactSection{
+    background: linear-gradient(100deg, #4d698f 10ch, #f4f4f6 220ch);
 }
 
 .projectCard:hover{
@@ -61,17 +65,17 @@
 
 @media only screen and (max-width: 1440px) {
     #HeroSection{
-        background: linear-gradient(315deg, #151a22 50ch, #f4f4f6 10ch);
+        background: linear-gradient(180deg, #6985ac 20ch, #f4f4f6 190ch);
     }
 }
 
 @media only screen and (max-width: 768px) {
     #HeroSection{
-        background: linear-gradient(315deg, #151a22 20ch, #f4f4f6 10ch);
+        background: linear-gradient(200deg, #6985ac 20ch, #f4f4f6 90ch);
     }
     
     #projectSection{
-        background: linear-gradient(270deg, #151a22 100ch, #f4f4f6 10ch);
+        background: linear-gradient(260deg, #6985ac 10ch, #f4f4f6 110ch);
     }
 
     .stage {
