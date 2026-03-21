@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
         >
           <p className="text-sm text-[#5D5D5A] mb-2">Skills</p>
           <h2 className="text-3xl md:text-5xl font-semibold text-[#023E8A]">
-            A Focus on Clarity.
+            The Toolkit
           </h2>
         </motion.div>
 

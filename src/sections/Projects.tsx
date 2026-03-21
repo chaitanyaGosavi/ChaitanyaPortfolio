@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
           </p>
 
           <h2 className="text-3xl md:text-5xl font-semibold text-[#023E8A]">
-            Selected Work.
+            My Work.
           </h2>
         </motion.div>
 
