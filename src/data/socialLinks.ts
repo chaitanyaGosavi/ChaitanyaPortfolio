@@ -27,6 +27,6 @@ export const contactData = {
 
   resume: {
     label: "Download Resume",
-    href: "public/assets/Chaitanya_Resume.pdf",
+    href: "assets/Chaitanya_Resume.pdf",
   },
 };
