@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="bg-sand text-primary py-20 md:py-28 px-6"
+      className="bg-sand dark:bg-bg text-cyan dark:text-teal py-20 md:py-28 px-6"
     >
       <div className="max-w-5xl mx-auto">
 
@@ -67,11 +67,11 @@ const Projects: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-sm text-[#5D5D5A] mb-2">
+          <p className="text-sm text-gray dark:text-textSecondary mb-2">
             Projects
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#023E8A]">
+          <h2 className="text-3xl md:text-5xl font-semibold text-cyan dark:text-teal">
             My Work.
           </h2>
         </motion.div>
@@ -103,7 +103,15 @@ const Projects: React.FC = () => {
                   }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="bg-card p-4 rounded-2xl shadow-sm h-[420px] flex flex-col">
+                  <div
+                    className="
+                      p-4 rounded-2xl h-[420px] flex flex-col
+                      bg-card/80 dark:bg-surface/60
+                      backdrop-blur-md
+                      border border-black/5 dark:border-white/10
+                      shadow-soft
+                    "
+                  >
 
                     {/* Image */}
                     <img
@@ -119,7 +127,7 @@ const Projects: React.FC = () => {
                         {project.title}
                       </h3>
 
-                      <p className="text-sm text-[#5D5D5A] mb-4 line-clamp-3">
+                      <p className="text-sm text-gray dark:text-textSecondary mb-4 line-clamp-3">
                         {project.description}
                       </p>
 
@@ -128,7 +136,13 @@ const Projects: React.FC = () => {
                         {project.tech.map((tech, i) => (
                           <span
                             key={i}
-                            className="text-xs px-2 py-1 bg-[#48CAE4]/20 text-[#023E8A] rounded-full"
+                            className="
+                              text-xs px-2 py-1 rounded-full
+                              bg-teal/20 dark:bg-accent/20
+                              text-cyan dark:text-accent
+                              backdrop-blur-sm
+                              border border-white/10
+                            "
                           >
                             {tech}
                           </span>
@@ -141,7 +155,7 @@ const Projects: React.FC = () => {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#48CAE4] text-sm hover:underline"
+                          className="text-teal dark:text-accent text-sm hover:underline"
                         >
                           View Project →
                         </a>
@@ -158,14 +172,26 @@ const Projects: React.FC = () => {
           <div className="flex justify-center gap-6 mt-12">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full bg-card flex items-center justify-center hover:bg-[#48CAE4] transition"
+              className="
+                w-10 h-10 rounded-full flex items-center justify-center
+                bg-card/80 dark:bg-surface/60
+                backdrop-blur-md
+                border border-black/5 dark:border-white/10
+                hover:bg-teal hover:text-textPrimary transition
+              "
             >
               ←
             </button>
 
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full bg-card flex items-center justify-center hover:bg-[#48CAE4] transition"
+              className="
+                w-10 h-10 rounded-full flex items-center justify-center
+                bg-card/80 dark:bg-surface/60
+                backdrop-blur-md
+                border border-black/5 dark:border-white/10
+                hover:bg-teal hover:text-textPrimary transition
+              "
             >
               →
             </button>

@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class", // ✅ REQUIRED
+
   content: [
     "./index.html",
     "./src/**/*.{ts,tsx}",
@@ -9,12 +11,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#FCFBF8",      // background
-        cyan: "#023E8A",      // primary text
-        teal: "#48CAE4",      // accents / cursor / progress
-        card: "#EADDC9",      // cards
-        gray: "#5D5D5A",      // secondary text
-        dark: "#0A111F",      // buttons / footer
+        // 🌞 LIGHT (keep minimal, fallback only)
+        sand: "#FCFBF8",
+        cyan: "#023E8A",
+        teal: "#48CAE4",
+        card: "#EADDC9",
+        gray: "#5D5D5A",
+        dark: "#0A111F",
+
+        // 🌙 DARK THEME (PRIMARY SYSTEM)
+        bg: "#0A111F",              // background
+        surface: "#111827",         // cards
+        textPrimary: "#d2d3d4",     // main text
+        textSecondary: "#9CA3AF",   // muted text
+        accent: "#48CAE4",          // highlight
+        borderSubtle: "rgba(255,255,255,0.08)",
       },
 
       fontFamily: {
@@ -23,6 +34,7 @@ const config: Config = {
 
       boxShadow: {
         soft: "0 10px 30px rgba(0, 0, 0, 0.08)",
+        glass: "0 8px 32px rgba(0,0,0,0.25)", // ✅ glass feel
       },
 
       backdropBlur: {

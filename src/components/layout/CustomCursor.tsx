@@ -12,7 +12,22 @@ const CustomCursor: React.FC = () => {
     y: 0,
   });
 
+  const [isDesktop, setIsDesktop] = useState(true);
+
   useEffect(() => {
+    const checkDevice = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+
+    return () => window.removeEventListener("resize", checkDevice);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
@@ -25,7 +40,9 @@ const CustomCursor: React.FC = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [isDesktop]);
+
+  if (!isDesktop) return null;
 
   return (
     <motion.div

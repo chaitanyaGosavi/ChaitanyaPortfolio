@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { useEffect, useState } from "react";
 
-const heading = "CRAFTING DIGITAL NARRATIVES".split(" ");
+const name = "Chaitanya Gosavi".split("");
 
 const Hero: React.FC = () => {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
-  // 🌊 Subtle parallax (reduced intensity)
+  // 🌊 Subtle parallax
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 6;
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 bg-sand"
+      className="relative min-h-screen flex items-center px-6 bg-sand dark:bg-dark overflow-hidden"
     >
       {/* 🌊 Parallax Background */}
       <motion.div
@@ -31,59 +32,102 @@ const Hero: React.FC = () => {
         transition={{ type: "spring", stiffness: 30, damping: 25 }}
       />
 
-      {/* 🧾 Content */}
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
+      <div className="relative z-10 max-w-5xl mx-auto w-full">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
 
-        {/* 🔥 Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold leading-tight text-[#023E8A]">
-          {heading.map((word, i) => (
-            <motion.span
-              key={i}
-              className="inline-block mr-2 md:mr-3"
-              initial={{ opacity: 0, y: 30 }}
+          <div className="text-center md:text-left">
+
+            {/* NAME (LETTER ANIMATION) */}
+            <h1 className="text-3xl md:text-5xl font-semibold text-cyan dark:text-teal">
+              {name.map((char, i) => (
+                <motion.span
+                  key={i}
+                  className="inline-block"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: i * 0.05,
+                    duration: 0.4,
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+            </h1>
+
+            {/* ROLE */}
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: i * 0.12,
-                duration: 0.5,
-                ease: [0.25, 0.1, 0.25, 1],
-              }}
+              transition={{ delay: 0.3 }}
+              className="mt-3 text-sm md:text-base text-textSecondary"
             >
-              {word}
-            </motion.span>
-          ))}
-        </h1>
+              Frontend Engineer · React · Angular · Next.js
+            </motion.p>
 
-        {/* 👤 Subheading */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: heading.length * 0.12 + 0.2 }}
-          className="mt-6 text-sm sm:text-base md:text-xl text-[#5D5D5A] max-w-2xl mx-auto leading-relaxed"
-        >
-          Chaitanya Gosavi — Frontend Engineer building scalable, modern web experiences
-        </motion.p>
+            {/* DESCRIPTION */}
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.45 }}
+              className="mt-4 max-w-xl text-sm md:text-base text-textSecondary leading-relaxed"
+            >
+              I build fast, scalable, and maintainable web applications with
+              modern UI/UX. Focused on performance, clean architecture, and
+              delivering impactful user experiences.
+            </motion.p>
 
-        {/* ⬇️ Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 0.7, y: 0 }}
-          transition={{ delay: 1.8 }}
-          className="mt-16 flex flex-col items-center gap-2 text-xs tracking-widest text-[#48CAE4]"
-        >
-          <span>SCROLL</span>
+            {/* SOCIALS */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="flex justify-center md:justify-start gap-4 mt-6"
+            >
+              <a
+                href="https://github.com/chaitanyaGosavi"
+                className="text-textSecondary hover:text-accent transition"
+              >
+                <FiGithub size={20} />
+              </a>
 
-          {/* Animated line */}
-          <motion.div
-            className="w-[1px] h-6 bg-[#48CAE4]"
-            animate={{ y: [0, 6, 0] }}
-            transition={{
-              duration: 1.2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        </motion.div>
+              <a
+                href="https://www.linkedin.com/in/chaitanya-gosavi-5b66b21b7/"
+                className="text-textSecondary hover:text-accent transition"
+              >
+                <FiLinkedin size={20} />
+              </a>
 
+              <a
+                href="mailto:chaitanya.gosavi.241101@gmail.com"
+                className="text-textSecondary hover:text-accent transition"
+              >
+                <FiMail size={20} />
+              </a>
+            </motion.div>
+
+            {/* CTA */}
+            <motion.a
+              href="#contact"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.75 }}
+              whileHover={{ scale: 1.05 }}
+              className="
+                inline-block mt-6
+                px-6 py-3
+                rounded-lg
+                border border-textSecondary
+                text-textSecondary
+                bg-transparent
+                hover:bg-accent/10
+                transition
+              "
+            >
+              Work With Me
+            </motion.a>
+          </div>
+        </div>
       </div>
     </section>
   );

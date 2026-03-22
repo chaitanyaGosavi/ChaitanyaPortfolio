@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section
       id="intro"
-      className="bg-sand text-primary py-20 md:py-28 px-6"
+      className="bg-sand dark:bg-bg text-cyan dark:text-textPrimary py-20 md:py-28 px-6"
     >
       <div className="max-w-5xl mx-auto">
 
@@ -16,11 +16,11 @@ const About: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-sm text-[#5D5D5A] mb-2">
+          <p className="text-sm text-gray dark:text-textSecondary mb-2">
             Introduction
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#023E8A]">
+          <h2 className="text-3xl md:text-5xl font-semibold text-cyan dark:text-teal">
             {aboutData.heading}
           </h2>
         </motion.div>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
                 delay: index * 0.15,
                 duration: 0.5,
               }}
-              className="text-sm md:text-base text-[#5D5D5A] leading-relaxed"
+              className="text-sm md:text-base text-gray dark:text-textSecondary leading-relaxed"
             >
               {para}
             </motion.p>

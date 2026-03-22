@@ -1,5 +1,3 @@
-// src/sections/Skills.tsx
-
 import { motion } from "framer-motion";
 import { skillsData } from "../data/skills";
 
@@ -8,13 +6,18 @@ const SkillBadge = ({ skill, index }: any) => {
 
   return (
     <motion.div
-      className="flex items-center gap-2 px-3 py-2 bg-card rounded-xl border border-white/20"
+      className="
+        flex items-center gap-2 px-3 py-2 rounded-xl
+        bg-card/80 dark:bg-surface/60
+        backdrop-blur-md
+        border border-black/5 dark:border-white/10
+      "
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       animate={{ y: [0, -3, 0] }}
       transition={{
         delay: index * 0.05,
-        duration: (index % 2),
+        duration: (1+ (index % 2)),
         repeat: Infinity,
         ease: "easeInOut",
       }}
@@ -23,15 +26,20 @@ const SkillBadge = ({ skill, index }: any) => {
         scale: 1.05,
       }}
     >
-      <Icon className="text-sm text-[#023E8A]" />
-      <span className="text-xs text-[#5D5D5A]">{skill.name}</span>
+      <Icon className="text-sm text-cyan dark:text-accent" />
+      <span className="text-sm text-gray dark:text-textSecondary">
+        {skill.name}
+      </span>
     </motion.div>
   );
 };
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="bg-sand text-primary py-20 md:py-28 px-6">
+    <section
+      id="skills"
+      className="bg-sand dark:bg-bg text-cyan dark:text-teal py-20 md:py-28 px-6"
+    >
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
@@ -40,8 +48,10 @@ const Skills: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <p className="text-sm text-[#5D5D5A] mb-2">Skills</p>
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#023E8A]">
+          <p className="text-sm text-gray dark:text-textSecondary mb-2">
+            Skills
+          </p>
+          <h2 className="text-3xl md:text-5xl font-semibold text-cyan dark:text-teal">
             The Toolkit
           </h2>
         </motion.div>
@@ -51,7 +61,7 @@ const Skills: React.FC = () => {
 
           {/* LEFT — Frontend (BIG BLOCK) */}
           <div>
-            <h3 className="text-sm text-[#5D5D5A] mb-4">
+            <h3 className="text-sm text-gray dark:text-textSecondary mb-4">
               Core Frontend
             </h3>
 
@@ -64,7 +74,7 @@ const Skills: React.FC = () => {
 
           {/* RIGHT — Languages */}
           <div>
-            <h3 className="text-sm text-[#5D5D5A] mb-4">
+            <h3 className="text-sm text-gray dark:text-textSecondary mb-4">
               Languages
             </h3>
 
@@ -77,7 +87,7 @@ const Skills: React.FC = () => {
 
           {/* FULL WIDTH — Tools */}
           <div className="md:col-span-2">
-            <h3 className="text-sm text-[#5D5D5A] mb-4">
+            <h3 className="text-sm text-gray dark:text-textSecondary mb-4">
               Tools & Workflow
             </h3>
 
@@ -90,7 +100,7 @@ const Skills: React.FC = () => {
 
           {/* SMALL BLOCK — Libraries */}
           <div>
-            <h3 className="text-sm text-[#5D5D5A] mb-4">
+            <h3 className="text-sm text-gray dark:text-textSecondary mb-4">
               Libraries
             </h3>
 
